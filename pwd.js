@@ -1,4 +1,5 @@
-module.exports = function() {
-  process.stdout.write(process.cwd());
-  process.stdout.write('\nprompt > ');
-}
+const done = require("./bash");
+
+module.exports = function () {
+  done(process.cwd());
+};
